@@ -12,6 +12,7 @@ public class Book {
     private String name;
     @ManyToOne
     private Author author;
+
     public Book(Long id, String name) {
         this.id = id;
         this.name = name;
