@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 
 import java.util.List;
 import java.util.Objects;
+
 @Entity
 public class Author {
     @Id
@@ -12,7 +13,7 @@ public class Author {
     private String name;
 
     @OneToMany
-    private List <Book> books;
+    private List<Book> books;
 
     public Author(Long id, String name) {
         this.id = id;
